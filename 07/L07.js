@@ -17,7 +17,7 @@ player2Dice();
 player1Dice();
 player2Dice();
 if (Player1Count > Player2Count) {
-   return 'Player1 win!');
+   console.log('Player1 win!');
 } else {
     if (Player1Count < Player2Count) {
         console.log('Player2 win!');
