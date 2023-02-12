@@ -43,7 +43,7 @@ async function squaring() {
 }
 squaring();
 
-3//
+
 const getNum2 = function () {
     const promise = new Promise((res) => {
         const randNum = returnRandomNumber(6, 10)
