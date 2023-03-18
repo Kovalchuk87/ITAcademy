@@ -1,0 +1,19 @@
+{
+  "name": "17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout=30000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "selenium-webdriver": "^4.8.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
