@@ -6,6 +6,7 @@ class ProductListingPage {
     this.sortAction = page.locator('.toolbar-sorter .action.sorter-action').first();
     this.sortDropdown = page.locator('.sorter .select2-selection--single');
     this.pageTitle = page.locator('.page-title');
+    this.productsList = page.locator('.product-item-link')
   }
 
   sortOptions(sortOption) {
@@ -13,7 +14,7 @@ class ProductListingPage {
   }
 
   async chooseSortingOption(sortOption) {
-    await this.page.click('.sorter .select2-selection--single');
+    await this.sortDropdown.click();
     await this.sortOptions(sortOption).click();
   }
 
@@ -31,7 +32,7 @@ class ProductListingPage {
   }
 
   async goToProductDetailsPage(itemNumber) {
-    await this.page.locator('.product-item-link').nth(itemNumber).click();
+    await this.productsList.nth(itemNumber).click();
   }
 }
 
